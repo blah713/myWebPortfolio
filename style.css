@@ -1,8 +1,187 @@
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 38px;
+* {
+    border: ;
+    
+
+}
+
+
+
+header a {
+  
+    
+    
+    margin: 0 3%;
+}
+header h2 {
+  margin: 7px;
+  font-family: 'Sixtyfour';
+  
+}
+#home {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 p {
-    background-color: greenyellow;
+    ;
 }
+
+header {
+    display: flex;
+    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+header p {
+    
+}
+header ul {
+   display: flex;
+   margin: 0;
+   margin-left: auto;
+   align-items: center;
+   list-style: none;
+}
+header li {
+    margin: 0 4px;
+    justify-content: right;
+    position: relative;
+    justify-items: right;
+    display: flex;
+
+    
+}
+
+body {
+  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+    margin:  0 auto;
+}
+
+main {
+  display: flex;
+  font-family: 'Kode Mono';
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+main h3 {
+  text-decoration: underline;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    display: flex;
+    left: -85px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 35px 35px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0 /* On mouse-over, make the elements appear as they should */
+  }
+  
+  
+  #about {
+    top: 10%;
+    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    border: 1px grey solid ;
+    font-size: 8px;
+  }
+  
+  
+  
+  #projects {
+    top: 15%;
+    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    border: 1px grey solid ;
+    font-size: 3px;
+    
+  }
+  
+  #contact {
+    top: 20%;
+    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    border: 1px grey solid ;
+    
+  }
+
+.text {
+   width: auto;
+    margin-right: 8%;
+    align-items: center;
+    
+}
+
+.collapsible {
+  background-color: transparent;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Kode Mono';
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,  .collapsible:hover {
+  font-family: 'Sixtyfour';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+
+#linkLI {
+  background-image: url(../myWebPortfolio/social-media-linkedin-computer-icons-logo-linked-in.jpg);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+  margin-top: 7px;
+  
+}
+#linkGH {
+  background-image: url(../myWebPortfolio/pngimg.com\ -\ github_PNG40.png);
+  background-color: aliceblue;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+margin-top: 7px;}
+
+  footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.6rem;
+  }
+
+  .link-external {
+    color: darkgoldenrod;
+  }
