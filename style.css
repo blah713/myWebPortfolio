@@ -1,57 +1,24 @@
 * {
-    border: ;
+    border: 1px solid red;
     
 
 }
 
 
-
+/*
 header a {
-  
-    
-    
-    margin: 0 3%;
+        margin: 0 3%;
 }
 header h2 {
   margin: 7px;
   font-family: 'Sixtyfour';
-  
 }
 #home {
   text-decoration: none;
   color: aliceblue;
 }
+*/
 
-p {
-    ;
-}
-
-header {
-    display: flex;
-    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
-}
-header p {
-    
-}
-header ul {
-   display: flex;
-   margin: 0;
-   margin-left: auto;
-   align-items: center;
-   list-style: none;
-}
-header li {
-    margin: 0 4px;
-    justify-content: right;
-    position: relative;
-    justify-items: right;
-    display: flex;
-
-    
-}
 
 body {
   background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
@@ -71,117 +38,208 @@ main {
 main h3 {
   text-decoration: underline;
 }
-/* Style the links inside the sidenav */
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    display: flex;
-    left: -85px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 35px 35px 0; /* Rounded corners on the top right and bottom right side */
-  }
-  
-  #mySidenav a:hover {
-    left: 0 /* On mouse-over, make the elements appear as they should */
-  }
-  
-  
-  #about {
-    top: 10%;
-    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-    border: 1px grey solid ;
-    font-size: 8px;
-  }
-  
-  
-  
-  #projects {
-    top: 15%;
-    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-    border: 1px grey solid ;
-    font-size: 3px;
+/*Header format*/
+header {
     
-  }
-  
-  #contact {
-    top: 20%;
-    background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-    border: 1px grey solid ;
-    
-  }
-
-.text {
-   width: auto;
-    margin-right: 8%;
-    align-items: center;
-    
-}
-
-.collapsible {
-  background-color: transparent;
+   
   color: aliceblue;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  font-family: 'Kode Mono';
-  
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,  .collapsible:hover {
-  font-family: 'Sixtyfour';
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
+/*Links format list*/
+header ul {
+ display: inline-flex;
+ margin: 0;
+ margin-left: auto;
+ align-items: center;
+ list-style: none;
+ padding: 0;
+ margin-top: 0.5%;
 }
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: transparent;
-}
-
+header li {
+  margin: 0 4px;
+  justify-content: right;
+  position: relative;
+  justify-items: right;
+  display: flex;  
+} 
 
 #linkLI {
   background-image: url(../myWebPortfolio/social-media-linkedin-computer-icons-logo-linked-in.jpg);
-  width: 2.5rem;
-  height: 2.5rem;
+
+
   background-size: cover;
-  margin-top: 7px;
+ 
+  position: relative
   
 }
 #linkGH {
   background-image: url(../myWebPortfolio/pngimg.com\ -\ github_PNG40.png);
   background-color: aliceblue;
-  width: 2.5rem;
-  height: 2.5rem;
+ 
   background-size: cover;
-margin-top: 7px;}
+
+}
+
+ 
+  /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: aliceblue;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-flex;
+  font-family: 'Sixtyfour';
+  
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: transparent;
+  color: white;
+}
+ 
+
+
+
+
 
   footer {
     display: flex;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 7px;
     font-size: 0.6rem;
+    font-family: 'Kode Mono';
+    
   }
 
   .link-external {
     color: darkgoldenrod;
   }
+
+
+
+  /* for rollout side nav */
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  display: flex;
+  left: -85px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 35px 35px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0 /* On mouse-over, make the elements appear as they should */
+}
+
+
+#about {
+  top: 10%;
+  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  border: 1px grey solid ;
+  font-size: 8px;
+}
+
+
+
+#projects {
+  top: 15%;
+  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  border: 1px grey solid ;
+  font-size: 3px;
+  
+}
+
+#contact {
+  top: 20%;
+  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  border: 1px grey solid ;
+  
+} 
+
+  
+.text {
+  width: auto;
+   margin-right: 8%;
+   align-items: center;
+   font-size: 1rem;
+   
+}
+.text a {
+  color: aliceblue;
+}
+.text a:hover {
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+/* projects part collaps menu  */
+.collapsible {
+ background-color: transparent;
+ color: aliceblue;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+ font-family: 'Kode Mono';
+ 
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,  .collapsible:hover {
+ font-family: 'Sixtyfour';
+ font-style: italic;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+ padding: 0 18px;
+ display: none;
+ overflow: hidden;
+ background-color: transparent;
+}
