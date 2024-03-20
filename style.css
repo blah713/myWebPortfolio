@@ -1,28 +1,10 @@
 * {
-   
-    
-
+   border: 1px solid red;
 }
-
-
-/*
-header a {
-        margin: 0 3%;
-}
-header h2 {
-  margin: 7px;
-  font-family: 'Sixtyfour';
-}
-#home {
-  text-decoration: none;
-  color: aliceblue;
-}
-*/
-
 
 body {
   background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   color: aliceblue;
     margin:  0 auto;
@@ -31,8 +13,7 @@ body {
 main {
   display: flex;
   font-family: 'Kode Mono';
-  margin-left: 8%;
-  margin-top: 5%;
+  margin: Auto 2rem;
 }
 
 main h3 {
@@ -40,8 +21,6 @@ main h3 {
 }
 /*Header format*/
 header {
-    
-   
   color: aliceblue;
 }
 
@@ -65,19 +44,13 @@ header li {
 
 #linkLI {
   background-image: url(../myWebPortfolio/social-media-linkedin-computer-icons-logo-linked-in.jpg);
-
-
   background-size: cover;
- 
   position: relative
-  
 }
 #linkGH {
   background-image: url(../myWebPortfolio/pngimg.com\ -\ github_PNG40.png);
   background-color: aliceblue;
- 
   background-size: cover;
-
 }
 
  
@@ -99,7 +72,7 @@ header li {
   color: aliceblue;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.6rem;
   display: inline-flex;
   font-family: 'Sixtyfour';
   
@@ -133,7 +106,7 @@ header li {
 
   footer {
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 7px;
     font-size: 0.6rem;
@@ -145,66 +118,13 @@ header li {
     color: darkgoldenrod;
   }
 
-
-
-  /* for rollout side nav */
-
-#mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  display: flex;
-  left: -85px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 35px 35px 0; /* Rounded corners on the top right and bottom right side */
-}
-
-#mySidenav a:hover {
-  left: 0 /* On mouse-over, make the elements appear as they should */
-}
-
-
-#about {
-  top: 10%;
-  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  border: 1px grey solid ;
-  font-size: 8px;
-}
-
-
-
-#projects {
-  top: 15%;
-  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  border: 1px grey solid ;
-  font-size: 3px;
-  
-}
-
-#contact {
-  top: 20%;
-  background-image: url(../myWebPortfolio/abstract-techno-low-poly-background-with-dark-connecting-dots-lines.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  border: 1px grey solid ;
-  
-} 
-
   
 .text {
   width: auto;
-   margin-right: 8%;
    align-items: center;
-   font-size: 1rem;
-   
 }
+
+
 .text a {
   color: aliceblue;
 }
@@ -223,7 +143,7 @@ header li {
  border: none;
  text-align: left;
  outline: none;
- font-size: 15px;
+ font-size: 1rem;
  font-family: 'Kode Mono';
  
 }
@@ -243,3 +163,26 @@ header li {
  overflow: hidden;
  background-color: transparent;
 }
+
+.content p {
+  font-size: 1rem;
+}
+
+@media only screen {
+  .active, .collapsible:hover {
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: larger;
+  }
+  .collapsible {
+    
+  }
+ .text {
+  align-items: center;
+ }
+ .content p {
+  font-size: 1rem;
+ }
+
+ }
